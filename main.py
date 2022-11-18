@@ -7,6 +7,7 @@ from PyPDF2 import PdfReader
 
 
 class Article_SA:
+    """Extracts text from PDF and calculates SA score."""
     def _count_words(self, filename):
         """Extract text from PDFs and count Positive / Negative Words"""
         # Extract text from PDF
@@ -68,6 +69,7 @@ class Article_SA:
 
 
 class Sentiment_Analysis:
+    """Stores a sorted list of all SA objects"""
     def _insertion_sort(self, articles): # Helper function to sort PDFs ascending
         """Sort PDFs in nondescending-order"""
         unordered_articles = articles
